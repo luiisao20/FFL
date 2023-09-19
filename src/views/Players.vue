@@ -39,8 +39,8 @@ function subirExcel(){
     const inputFile = document.getElementById('excel');
 
     readXlsFile(inputFile.files[0]).then((rows) => {
-        const begin = 41;
-        const finish = 50;
+        const begin = 1;
+        const finish = 10;
         for (let index = begin; index < finish + 1; index++) {
             items.value.push(rows[index]); 
         }
